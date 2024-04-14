@@ -8,7 +8,8 @@
     "format": "prettier --write \"projects/**/*.{json,css,scss,less,md,ts,html}\"",
     "format:check": "\nprettier --check \"projects/**/*.{json,css,scss,less,md,ts,html}\"",
     "watch": "ng build --watch --configuration development",
-    "test": "jest",
+    "test": "npm run test:quick-chat-ui",
+    "test:quick-chat-ui": "jest --config projects/quick-chat-ui/jest.config.js",
     "test:watch": "jest —-watch",
     "test:coverage": "jest --collectCoverage"
   },
@@ -30,6 +31,7 @@
     "@angular-devkit/build-angular": "^17.3.2",
     "@angular/cli": "^17.3.2",
     "@angular/compiler-cli": "^17.3.0",
+    "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
     "jest-preset-angular": "^14.0.3",
     "prettier": "^3.2.5",

@@ -1,7 +1,8 @@
 {
-  "extends": "./tsconfig.app.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../out-tsc/spec",
+    "esModuleInterop": true,
+    "outDir": "./out-tsc/spec",
     "types": [
       "jest"
     ]

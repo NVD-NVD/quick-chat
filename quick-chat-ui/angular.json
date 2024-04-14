@@ -75,6 +75,17 @@
           "options": {
             "buildTarget": "quick-chat-ui:build"
           }
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "modulePathIgnorePatterns": [
+            ]
+          }
         }
       }
     }
